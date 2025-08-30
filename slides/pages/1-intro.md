@@ -53,7 +53,6 @@ transition: slide-up
 	}
 
 }
-
 </style>
 
 <div class="centered-right">
@@ -394,7 +393,6 @@ class: custom-title title-again
 		}
 	}
 }
-
 </style>
 
 <div class="centered-right">
@@ -407,10 +405,7 @@ class: custom-title title-again
 </div>
 
 <!--
-
-
 Ok, so what does it mean to use ember everywhere?
-
 
 What does it mean?
 
