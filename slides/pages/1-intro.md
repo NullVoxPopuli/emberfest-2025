@@ -6,6 +6,7 @@ info: |
 
   What you need to achieve the activation energy to become unstoppable.
 # https://sli.dev/features/drawing
+class: custom-title
 drawings:
   persist: false
 transition: slide-left
@@ -19,7 +20,7 @@ transition: slide-up
 ---
 
 <style>
-.slidev-layout.cover {
+.custom-title {
 	background: black;
 	background-image: unset !important;
 
@@ -64,14 +65,6 @@ transition: slide-up
 	<span class="caveat">except time, energy, focus, hours in a day, etc</span>
 </div>
 
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
-</div>
 
 <!--
 
@@ -133,7 +126,11 @@ title: Who am I?
 <!--
 
 This is how you can find me online.
-I'm Null Vox Populi everywhere, and if you can't find me somewhere, let me know,
+I'm Null Vox Populi everywhere.
+
+The website at the QR code has a list of links, blukesy, mastadon, twitter, github, etc.
+
+If you can't find me somewhere, let me know,
 And then you'll have found me.
 -->
 
@@ -271,25 +268,150 @@ title: What's interesting about Auditboard's code? (currently (continued))
 
 auditboard-frontend
 
-|          | Last Year | This Year | Δ     |
-| -------- | --------- | --------- | ----- |
-| JS       | 0.m     | 0.82m     | +%   |
-| TS       | 0.m     | 0.47m     | +%  |
-| GJS      | 0.m     | 0.52m     | +%   |
-| GTS      | 0.m     | 0.30m     | +%  |
-| CSS, etc | 0.m     | 0.87m     | +%  |
-| ........ |           |           |       |
-| Total    | 2m        | 2.9m      | +50%  | 
+|          | Last Year | This Year | Δ       |
+| -------- | --------- | --------- | ------- |
+| JS       | 1.1m      | 0.82m     | -25%    |
+| TS       | 0.31m     | 0.47m     | +52%    |
+| GJS      | 1.7k      | 0.52m     | +30,488% |
+| GTS      | 64.6k     | 0.30m     | +364%   |
+| CSS, etc | 0.52m     | 0.79m     | +52%    |
+| ........ |           |           |         |
+| Total    | 2m        | 2.9m      | +50%    | 
 
 <br />
 
 <!--
+
+This repo has all the ember!
+
+Some interesting things about numbers in this table:
+- the total number of lines only went up by 50%
+- however, adding 1 million lines of code in one year is just... bonkers
+- fun fact: during this time, this codebase completely migrated all 
+  components, route-templates, and rendering tests to gjs and gts.
+- also! during this time all but one apps in the repo are now running vite
+
+
+Best of all....
+(next slide)
+
+
+||||||||
+
+current: 63d00157616
+last year: c10f268 
+see: https://dev.to/nullvoxpopuli/repository-growth-over-time-1o5a
 
  tokei \
   --types=HTML,CSS,JSON \
   --types=JavaScript,TypeScript,Handlebars \
   --types=Glimmer\ JS,Glimmer\ TS
 
-This repo has all the ember!
+
+-->
+
+---
+transition: slide-up 
+level: 2
+title: What's interesting about Auditboard's code? (currently (continued (continued)))
+---
+
+# How we wrote 1 million lines in a year
+
+<img src="/images/sewing-machine.avif" />
+
+<!--
+
+Code is still primarily hand-crafted, yet machine-assisted. 
+Using every tool available to produce value for customers.
+
+No viben.
+
+|||||
+
+
+Image credit: https://unsplash.com/photos/a-close-up-of-a-sewing-machine-on-a-table-1urO7XN3zuA
+
+
+-->
+
+
+
+---
+transition: slide-up 
+level: 2
+title: What's interesting about Auditboard's code? (currently (continued (continued)))
+---
+
+
+|          | as of emberfest 2024 | as of emberfest 2025 | Δ     |
+| -------- | --------- | --------- | ----- |
+| Files       | 14,777 | 22,730    | +54%  |
+| insertions  | 104,049| 160,793   | +55%  |
+| deletions   | 98,324 | 158,853   | +76%  |
+| ........ |           |           |       |
+| Net +    | 5,725     | 1,940     |       | 
+
+<!--
+
+For fun, last year, I said that my contributions in total were (unfortunately) still net positive.
+
+Well, this year, that's still the case -- BUT! 
+I'm quickly approaching zero,
+and I really feel like like next year I might actually be able to achieve my goal of removing more code from the codebase than adding to it.
+
+Anywho, this is a silly metric, but it's fun. 
+Producing more value with less code is the dream.
+
+
+Anywho, enough stats! Let's get to puttin' ember places
+
+||||||
+
+git log --shortstat --author "NullVoxPopuli" \
+| egrep "file[s]* changed" \
+| sed 's/changed, \([0-9]\+ deletions\)/changed, 0 insertions(+), \1/g' \
+| awk '{files+=$1; inserted+=$4; deleted+=$6} END {print "files changed", files, "lines inserted:", inserted, "lines deleted:", deleted}' 
+
+
+-->
+
+---
+theme: default
+title: e(mber)verywhere (actually getting in to it)
+transition: slide-left
+class: custom-title title-again
+---
+
+<style>
+.title-again {
+	display: flex;
+	align-items: center;
+
+	h1 {
+		span {
+			margin-top: 2rem;
+		}
+	}
+}
+
+</style>
+
+<div class="centered-right">
+	<h1 class="pacifico">
+	  <img src="/images/ember-e-circle-icon-4c.svg" />
+	  <span>verywhere</span>
+	</h1>
+	<em class="subtitle">there are no limits</em>
+	<span class="caveat">except time, energy, focus, hours in a day, etc</span>
+</div>
+
+<!--
+
+
+Ok, so what does it mean to use ember everywhere?
+
+
+What does it mean?
 
 -->
