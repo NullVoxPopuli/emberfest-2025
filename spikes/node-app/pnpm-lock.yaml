@@ -10,7 +10,7 @@ patchedDependencies:
     hash: 9bf61ecb23d9565c61f9a052754edf141e78d9034976298b42f841e485a10902
     path: patches/@node-loader__babel.patch
   ember-source:
-    hash: 926e8ee0dcae85aa01a39aa6c6110b2097336c2af58295a4448f534120d9649b
+    hash: a02ecc08f00fd6e694c25dc06ac62886361ac884be23fee6dfcd24d8736a37e1
     path: patches/ember-source.patch
 
 importers:
@@ -42,9 +42,6 @@ importers:
       '@embroider/macros':
         specifier: ^1.18.0
         version: 1.18.1(@glint/template@1.6.0-alpha.2)
-      '@embroider/router':
-        specifier: ^3.0.1
-        version: 3.0.3(a06699f5b94c7392dc6ec64a04a2b1d4)
       '@glimmer/component':
         specifier: ^2.0.0
         version: 2.0.0
@@ -89,13 +86,19 @@ importers:
         version: 2.3.0(@babel/core@7.28.3)
       ember-source:
         specifier: 6.8.0-alpha.6
-        version: 6.8.0-alpha.6(patch_hash=926e8ee0dcae85aa01a39aa6c6110b2097336c2af58295a4448f534120d9649b)(@glimmer/component@2.0.0)(rsvp@4.8.5)
+        version: 6.8.0-alpha.6(patch_hash=a02ecc08f00fd6e694c25dc06ac62886361ac884be23fee6dfcd24d8736a37e1)(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
         specifier: ^7.7.0
         version: 7.9.3
       eslint:
         specifier: ^9.27.0
         version: 9.34.0(jiti@2.4.2)
+      happy-dom:
+        specifier: ^18.0.1
+        version: 18.0.1
+      jsdom:
+        specifier: ^26.1.0
+        version: 26.1.0
       prettier:
         specifier: ^3.5.3
         version: 3.6.2
@@ -718,9 +721,6 @@ packages:
   '@ember/edition-utils@1.2.0':
     resolution: {integrity: sha512-VmVq/8saCaPdesQmftPqbFtxJWrzxNGSQ+e8x8LLe3Hjm36pJ04Q8LeORGZkAeOhldoUX9seLGmSaHeXkIqoog==}
 
-  '@ember/test-waiters@4.1.1':
-    resolution: {integrity: sha512-HbK70JYCDJcGI0CrwcbjeL2QHAn0HLwa3oGep7mr6l/yO95U7JYA8VN+/9VTsWJTmKueLtWayUqEmGS3a3mVOg==}
-
   '@embroider/addon-shim@1.10.0':
     resolution: {integrity: sha512-gcJuHiXgnrzaU8NyU+2bMbtS6PNOr5v5B8OXBqaBvTCsMpXLvKo8OBOQFCoUN0rPX2J6VaFqrbi/371sMvzZug==}
     engines: {node: 12.* || 14.* || >= 16}
@@ -740,14 +740,6 @@ packages:
 
   '@embroider/reverse-exports@0.1.2':
     resolution: {integrity: sha512-TgjQalfB42RnwdRVApjcvHSVjBe+7MJfCZV0Cs1jv2QgnFGr/6f5X19PKvmF4FU4xbBf7yOsIWrVvYvidWnXlw==}
-
-  '@embroider/router@3.0.3':
-    resolution: {integrity: sha512-gM8DxtSvoXjwPxO1UwR5AmJGMNx6evfdHtUyj4RNg4mAlFTzpsyMHLMzNff3Tabk0MCQnu+Y8IeFLOJUftCj7w==}
-    peerDependencies:
-      '@embroider/core': ^2.0.0||^3.0.0||^4.0.0-alpha.0
-    peerDependenciesMeta:
-      '@embroider/core':
-        optional: true
 
   '@embroider/shared-internals@3.0.0':
     resolution: {integrity: sha512-5J5ipUMCAinQS38WW7wedruq5Z4VnHvNo+ZgOduw0PtI9w0CQWx7/HE+98PBDW8jclikeF+aHwF317vc1hwuzg==}
@@ -1022,6 +1014,9 @@ packages:
   '@types/minimatch@3.0.5':
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
 
+  '@types/node@20.19.11':
+    resolution: {integrity: sha512-uug3FEEGv0r+jrecvUUpbY8lLisvIjg6AAic6a2bSP5OEOLeJsDSnvhCDov7ipFFMXS3orMpzlmi0ZcuGkBbow==}
+
   '@types/node@24.3.0':
     resolution: {integrity: sha512-aPTXCrfwnDLj4VvXrm+UUCQjNEvJgNA8s5F1cvwQU+3KNltTOkBm1j30uNLyqqPNe7gE3KFzImYoZEfLhp4Yow==}
 
@@ -1033,6 +1028,9 @@ packages:
 
   '@types/symlink-or-copy@1.2.2':
     resolution: {integrity: sha512-MQ1AnmTLOncwEf9IVU+B2e4Hchrku5N67NkgcAHW0p3sdzPe0FNMANxEm6OJUzPniEQGkeT3OROLlCwZJLWFZA==}
+
+  '@types/whatwg-mimetype@3.0.2':
+    resolution: {integrity: sha512-c2AKvDT8ToxLIOUlN51gTiHXflsfIFisS4pO7pDPoKouJCESkhZnEy623gwP9laCy5lnLDAw1vAzu2vM2YLOrA==}
 
   '@typescript-eslint/eslint-plugin@8.41.0':
     resolution: {integrity: sha512-8fz6oa6wEKZrhXWro/S3n2eRJqlRcIa6SlDh59FXJ5Wp5XRZ8B9ixpJDcjadHq47hMx0u+HW6SNa6LjJQ6NLtw==}
@@ -2196,6 +2194,10 @@ packages:
     engines: {node: '>=0.4.7'}
     hasBin: true
 
+  happy-dom@18.0.1:
+    resolution: {integrity: sha512-qn+rKOW7KWpVTtgIUi6RVmTBZJSe2k0Db0vh1f7CWrWclkkc7/Q+FrOfkZIb2eiErLyqu5AXEzE7XthO9JVxRA==}
+    engines: {node: '>=20.0.0'}
+
   has-bigints@1.1.0:
     resolution: {integrity: sha512-R3pbpkcIqv2Pm3dUwgjclDRVmWpTJW2DcMzcIhEXEx1oh/CEMObMm3KLmRJOdvhM7o4uQBnwr8pzRK2sJWIqfg==}
     engines: {node: '>= 0.4'}
@@ -2448,6 +2450,15 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       canvas: ^2.11.2
+    peerDependenciesMeta:
+      canvas:
+        optional: true
+
+  jsdom@26.1.0:
+    resolution: {integrity: sha512-Cvc9WUhxSMEo4McES3P7oK3QaXldCfNWp7pl2NNeiIFlCoLr3kfq9kb1fxftiwk1FLV7CvpvDfonxtzUDeSOPg==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      canvas: ^3.0.0
     peerDependenciesMeta:
       canvas:
         optional: true
@@ -3293,6 +3304,9 @@ packages:
   underscore.string@3.3.6:
     resolution: {integrity: sha512-VoC83HWXmCrF6rgkyxS9GHv8W9Q5nhMKho+OadDJGzL2oDYbYEppBaCMH6pFlwLeqj2QS+hhkw2kpXkSdD1JxQ==}
 
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+
   undici-types@7.10.0:
     resolution: {integrity: sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag==}
 
@@ -3416,6 +3430,10 @@ packages:
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
+
+  whatwg-mimetype@3.0.0:
+    resolution: {integrity: sha512-nt+N2dzIutVRxARx1nghPKGv1xHikU7HKdfafKkLNLindmPU/ch3U31NOCGGA/dmPcmb1VlofO0vnKAcsm0o/Q==}
+    engines: {node: '>=12'}
 
   whatwg-mimetype@4.0.0:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
@@ -4289,14 +4307,6 @@ snapshots:
 
   '@ember/edition-utils@1.2.0': {}
 
-  '@ember/test-waiters@4.1.1(@glint/template@1.6.0-alpha.2)':
-    dependencies:
-      '@embroider/addon-shim': 1.10.0
-      '@embroider/macros': 1.18.1(@glint/template@1.6.0-alpha.2)
-    transitivePeerDependencies:
-      - '@glint/template'
-      - supports-color
-
   '@embroider/addon-shim@1.10.0':
     dependencies:
       '@embroider/shared-internals': 3.0.0
@@ -4361,16 +4371,6 @@ snapshots:
     dependencies:
       mem: 8.1.1
       resolve.exports: 2.0.3
-
-  '@embroider/router@3.0.3(a06699f5b94c7392dc6ec64a04a2b1d4)':
-    dependencies:
-      '@ember/test-waiters': 4.1.1(@glint/template@1.6.0-alpha.2)
-      '@embroider/addon-shim': 1.10.0
-    optionalDependencies:
-      '@embroider/core': 4.1.3(@glint/template@1.6.0-alpha.2)
-    transitivePeerDependencies:
-      - '@glint/template'
-      - supports-color
 
   '@embroider/shared-internals@3.0.0':
     dependencies:
@@ -4746,6 +4746,10 @@ snapshots:
 
   '@types/minimatch@3.0.5': {}
 
+  '@types/node@20.19.11':
+    dependencies:
+      undici-types: 6.21.0
+
   '@types/node@24.3.0':
     dependencies:
       undici-types: 7.10.0
@@ -4758,6 +4762,8 @@ snapshots:
   '@types/rsvp@4.0.9': {}
 
   '@types/symlink-or-copy@1.2.2': {}
+
+  '@types/whatwg-mimetype@3.0.2': {}
 
   '@typescript-eslint/eslint-plugin@8.41.0(286930436ecc95c444e157ad620cd20b)':
     dependencies:
@@ -5718,7 +5724,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-source@6.8.0-alpha.6(patch_hash=926e8ee0dcae85aa01a39aa6c6110b2097336c2af58295a4448f534120d9649b)(@glimmer/component@2.0.0)(rsvp@4.8.5):
+  ember-source@6.8.0-alpha.6(patch_hash=a02ecc08f00fd6e694c25dc06ac62886361ac884be23fee6dfcd24d8736a37e1)(@glimmer/component@2.0.0)(rsvp@4.8.5):
     dependencies:
       '@babel/core': 7.28.3
       '@ember/edition-utils': 1.2.0
@@ -6403,6 +6409,12 @@ snapshots:
     optionalDependencies:
       uglify-js: 3.19.3
 
+  happy-dom@18.0.1:
+    dependencies:
+      '@types/node': 20.19.11
+      '@types/whatwg-mimetype': 3.0.2
+      whatwg-mimetype: 3.0.0
+
   has-bigints@1.1.0: {}
 
   has-flag@3.0.0: {}
@@ -6665,6 +6677,33 @@ snapshots:
       nwsapi: 2.2.21
       parse5: 7.3.0
       rrweb-cssom: 0.7.1
+      saxes: 6.0.0
+      symbol-tree: 3.2.4
+      tough-cookie: 5.1.2
+      w3c-xmlserializer: 5.0.0
+      webidl-conversions: 7.0.0
+      whatwg-encoding: 3.1.1
+      whatwg-mimetype: 4.0.0
+      whatwg-url: 14.2.0
+      ws: 8.18.3
+      xml-name-validator: 5.0.0
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+
+  jsdom@26.1.0:
+    dependencies:
+      cssstyle: 4.6.0
+      data-urls: 5.0.0
+      decimal.js: 10.6.0
+      html-encoding-sniffer: 4.0.0
+      http-proxy-agent: 7.0.2
+      https-proxy-agent: 7.0.6
+      is-potential-custom-element-name: 1.0.1
+      nwsapi: 2.2.21
+      parse5: 7.3.0
+      rrweb-cssom: 0.8.0
       saxes: 6.0.0
       symbol-tree: 3.2.4
       tough-cookie: 5.1.2
@@ -7535,6 +7574,8 @@ snapshots:
       sprintf-js: 1.1.3
       util-deprecate: 1.0.2
 
+  undici-types@6.21.0: {}
+
   undici-types@7.10.0: {}
 
   unicode-canonical-property-names-ecmascript@2.0.1: {}
@@ -7681,6 +7722,8 @@ snapshots:
   whatwg-encoding@3.1.1:
     dependencies:
       iconv-lite: 0.6.3
+
+  whatwg-mimetype@3.0.0: {}
 
   whatwg-mimetype@4.0.0: {}
 

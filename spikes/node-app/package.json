@@ -36,7 +36,6 @@
     "@ember/app-tsconfig": "^1.0.3",
     "@embroider/core": "^4.1.0",
     "@embroider/macros": "^1.18.0",
-    "@embroider/router": "^3.0.1",
     "@glimmer/component": "^2.0.0",
     "@glint/core": "alpha",
     "@glint/environment-ember-loose": "alpha",
@@ -54,6 +53,8 @@
     "ember-source": "6.8.0-alpha.6",
     "ember-template-lint": "^7.7.0",
     "eslint": "^9.27.0",
+    "happy-dom": "^18.0.1",
+    "jsdom": "^26.1.0",
     "prettier": "^3.5.3",
     "prettier-plugin-ember-template-tag": "^2.0.5",
     "typescript": "^5.8.3"

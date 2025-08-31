@@ -1,8 +1,5 @@
 {
   "extends": "@ember/app-tsconfig",
-  "include": [
-    "app", "tests", "types"
-  ],
   "glint": {
     "environment": [
       "ember-loose",

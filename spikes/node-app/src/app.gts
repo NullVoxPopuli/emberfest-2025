@@ -1,7 +1,9 @@
+import './renderer.ts';
+
 import Component from '@glimmer/component';
-import { on } from '@ember/modifier';
 import { tracked } from '@glimmer/tracking';
-import EmberRouter from '@embroider/router';
+import { on } from '@ember/modifier';
+import EmberRouter from '@ember/routing/router';
 
 import Application from 'ember-strict-application-resolver';
 
@@ -31,7 +33,10 @@ class App extends Application {
   };
 }
 
-const element = {};
+const element = document.createElement('div');
+const parent = document.createElement('div');
+
+parent.append(element);
 
 App.create({
   element,

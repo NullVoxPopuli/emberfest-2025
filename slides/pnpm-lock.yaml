@@ -10,7 +10,7 @@ patchedDependencies:
     hash: 9bf61ecb23d9565c61f9a052754edf141e78d9034976298b42f841e485a10902
     path: ../spikes/node-app/patches/@node-loader__babel.patch
   ember-source:
-    hash: 926e8ee0dcae85aa01a39aa6c6110b2097336c2af58295a4448f534120d9649b
+    hash: a02ecc08f00fd6e694c25dc06ac62886361ac884be23fee6dfcd24d8736a37e1
     path: ../spikes/node-app/patches/ember-source.patch
 
 importers:
