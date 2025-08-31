@@ -182,9 +182,8 @@ subtle.sync(() => {
 ```
 
 
-<iframe 
-	height="100%"
-	src="/demos/effects/index.html">
-</iframe>
+<div class="iframe-chrome">
+	<iframe src="/demos/effects/index.html"></iframe>
+</div>		
 
 </div>
