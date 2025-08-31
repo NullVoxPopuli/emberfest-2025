@@ -12,10 +12,10 @@
   "compilerOptions": {
     "allowJs": true,
     "paths": {
-      "cli-app/tests/*": [
+      "effects-app/tests/*": [
         "./tests/*"
       ],
-      "cli-app/*": [
+      "effects-app/*": [
         "./app/*"
       ],
       "*": [

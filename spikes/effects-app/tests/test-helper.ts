@@ -3,8 +3,8 @@ import * as QUnit from 'qunit';
 import { setup } from 'qunit-dom';
 import { setupEmberOnerrorValidation, start as qunitStart } from 'ember-qunit';
 
-import Application from 'cli-app/app';
-import config from 'cli-app/config/environment';
+import Application from 'effects-app/app';
+import config from 'effects-app/config/environment';
 
 export function start() {
   setApplication(Application.create(config.APP));

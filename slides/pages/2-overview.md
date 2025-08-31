@@ -152,10 +152,34 @@ Quite a few.
 -->
 
 ---
+title: REPL
+class: layout-full
+---
+
+# What can we do with this power of patching? (pop)
+
+<div class="iframe-chrome">
+	<div class="iframe-chrome-tab">
+	  REPL | limber.glimdown.com
+	</div>
+	<iframe src="https://limber.glimdown.com/edit?c=JYWwDg9gTgLgBAYQuCA7Apq%2BAzKy4DkAAgOYA2oI6UA9AMbKQZYEDcAUKJLHAN5wwoAQzoBrdABM4AXzi58xcpWo1BI0cFQk27dnTJCAzobgAJdGTIQA6tDJT0ADxiYJJpCmbxe7OHCJqYpJwDACuWHAAvHAADBx%2BmnRQ6FQR0QAUAJRRAHwCABbAhgB0YREA1NEAjBy%2BcAA8LuAGLjl1fgCaEKFw%2BUIAbughFEFSMPlDAEahMDBocO18vONFpd1Y0rIwoOglun5%2B9dOz83Bo%2BsBikbzLhSWJyakwm20HBwgjoov1NMdzqK8GqoUmAWug2tJdE5uPAJOhsEJQmR4OZLDY7BIOEA&format=gjs&editor=60v&forceEditor=true"></iframe>
+</div>		
+
+<!--
+
+This REPL here renders an ember app inside an ember app.
+
+This is not an engine, because I needed the output side of the REPL to 
+not share any app-wide state with the host application.
+
+-->
+
+
+---
 title: Effects lol
 ---
 
-# What can we do with these powers of patching?
+# What can we do with this power of patching? (pop)
 
 
 <div class="two-columns">
@@ -183,6 +207,9 @@ subtle.sync(() => {
 
 
 <div class="iframe-chrome">
+	<div class="iframe-chrome-tab">
+	  Effects, lol 
+	</div>
 	<iframe src="/demos/effects/index.html"></iframe>
 </div>		
 

@@ -1,5 +1,5 @@
 const ENV = {
-  modulePrefix: 'cli-app',
+  modulePrefix: 'effects-app',
   environment: import.meta.env.DEV ? 'development' : 'production',
   rootURL: '/',
   locationType: 'none',

@@ -8,7 +8,7 @@ settings:
 patchedDependencies:
   ember-source:
     hash: 926e8ee0dcae85aa01a39aa6c6110b2097336c2af58295a4448f534120d9649b
-    path: ../spikes/cli-app/patches/ember-source.patch
+    path: ../spikes/effects-app/patches/ember-source.patch
 
 importers:
 
