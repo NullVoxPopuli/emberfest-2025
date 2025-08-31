@@ -168,7 +168,7 @@ const linesEl = useTemplateRef('linescontainer');
 
 			<a href="https://warp-drive.io/" ref="warpdrive">
 				<img src="/images/NCC-1701-a-gold.svg" />
-				<span>warpdrive</span>
+				<span>WarpDrive</span>
 			</a>
 
 			<a href="https://github.com/tc39/proposal-signals" ref="signals">
