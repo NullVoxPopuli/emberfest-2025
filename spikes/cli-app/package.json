@@ -84,5 +84,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "kolay": "^3.9.1"
   }
 }

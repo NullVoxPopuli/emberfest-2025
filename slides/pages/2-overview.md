@@ -150,3 +150,41 @@ These packages[^access-restricted]:
 Quite a few.
 
 -->
+
+---
+title: Effects lol
+---
+
+# What can we do with these powers of patching?
+
+
+<div class="two-columns">
+
+```gjs
+import { tracked } from '@glimmer/tracking';
+import { subtle } from '@ember/renderer';
+
+class Demo {
+  @tracked count = 0;
+  increment = () => this.count++;
+}
+
+const demo = new Demo();
+
+subtle.sync(() => {
+  console.log(demo.count);
+});
+
+<template>
+  {{demo.count}}
+  <button onclick={{demo.increment}}>++</button>
+</template>
+```
+
+
+<iframe 
+	height="100%"
+	src="/demos/effects/index.html">
+</iframe>
+
+</div>

@@ -1,7 +1,7 @@
 import { tracked } from '@glimmer/tracking';
 import { subtle } from '@ember/renderer';
 
-import { pageTitle } from 'ember-page-title';
+import { Logs } from 'kolay/components';
 
 class Demo {
   @tracked count = 0;
@@ -15,11 +15,8 @@ subtle.sync(() => {
 });
 
 <template>
-  {{pageTitle "CliApp"}}
-
-  <h2 id="title">Welcome to Ember</h2>
-
   {{demo.count}}
   <button onclick={{demo.increment}}>++</button>
-  {{outlet}}
+
+  <Logs />
 </template>

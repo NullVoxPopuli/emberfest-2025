@@ -2,7 +2,7 @@ const ENV = {
   modulePrefix: 'cli-app',
   environment: import.meta.env.DEV ? 'development' : 'production',
   rootURL: '/',
-  locationType: 'history',
+  locationType: 'none',
   EmberENV: {
     EXTEND_PROTOTYPES: false,
     FEATURES: {

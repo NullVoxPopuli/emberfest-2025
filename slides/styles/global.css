@@ -23,6 +23,15 @@
 	border: 2px solid var(--border-color);
 	border-radius: 0.5rem;
 }
+.slidev-code-wrapper {
+	margin: 0 !important;
+}
+
+.two-columns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
 
 /**
 * Other global elements
