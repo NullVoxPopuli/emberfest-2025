@@ -11,7 +11,7 @@ const supportedModuleFormats = ['module', 'commonjs'];
 
 export async function load(url, context, defaultLoad) {
   if (!useLoader(url)) {
-    console.log(`Ignoring, `, url);
+    // console.log(`Ignoring, `, url);
 
     return defaultLoad(url, context, defaultLoad);
   }
