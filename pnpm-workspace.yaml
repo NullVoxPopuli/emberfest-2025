@@ -2,11 +2,16 @@ packages:
   - slides/
   - spikes/*
 
+allowUnusedPatches: true
+
 autoInstallPeers: false
 
-peersSuffixMaxLength: 40
 dedupeInjectedDeps: true
+
 dedupePeerDependents: true
 
+peersSuffixMaxLength: 40
+
 resolutionMode: highest
+
 sharedWorkspaceLockfile: false
