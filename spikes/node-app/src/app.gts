@@ -1,4 +1,6 @@
-import Component, { tracked } from '@glimmer/tracking';
+import Component from '@glimmer/component';
+import { on } from '@ember/modifier';
+import { tracked } from '@glimmer/tracking';
 import EmberRouter from '@embroider/router';
 
 import Application from 'ember-strict-application-resolver';

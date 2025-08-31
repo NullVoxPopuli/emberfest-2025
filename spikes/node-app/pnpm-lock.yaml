@@ -81,6 +81,9 @@ importers:
       concurrently:
         specifier: ^9.1.2
         version: 9.2.1
+      content-tag:
+        specifier: ^3.0.0
+        version: 3.1.3
       decorator-transforms:
         specifier: ^2.3.0
         version: 2.3.0(@babel/core@7.28.3)
