@@ -62,6 +62,7 @@
   },
   "pnpm": {
     "patchedDependencies": {
+      "@node-loader/babel": "patches/@node-loader__babel.patch",
       "ember-source": "patches/ember-source.patch"
     }
   },

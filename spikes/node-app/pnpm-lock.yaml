@@ -6,6 +6,9 @@ settings:
   peersSuffixMaxLength: 40
 
 patchedDependencies:
+  '@node-loader/babel':
+    hash: 9bf61ecb23d9565c61f9a052754edf141e78d9034976298b42f841e485a10902
+    path: patches/@node-loader__babel.patch
   ember-source:
     hash: 926e8ee0dcae85aa01a39aa6c6110b2097336c2af58295a4448f534120d9649b
     path: patches/ember-source.patch
@@ -62,7 +65,7 @@ importers:
         version: 2.0.0-alpha.4
       '@node-loader/babel':
         specifier: ^2.1.0
-        version: 2.1.0
+        version: 2.1.0(patch_hash=9bf61ecb23d9565c61f9a052754edf141e78d9034976298b42f841e485a10902)
       '@node-loader/import-maps':
         specifier: ^1.1.0
         version: 1.1.0
@@ -4665,7 +4668,7 @@ snapshots:
     dependencies:
       eslint-scope: 5.1.1
 
-  '@node-loader/babel@2.1.0': {}
+  '@node-loader/babel@2.1.0(patch_hash=9bf61ecb23d9565c61f9a052754edf141e78d9034976298b42f841e485a10902)': {}
 
   '@node-loader/import-maps@1.1.0': {}
 

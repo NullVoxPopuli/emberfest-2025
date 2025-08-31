@@ -1,0 +1,13 @@
+diff --git a/lib/node-loader-babel.js b/lib/node-loader-babel.js
+index b8aaaffbed2de3456639f86a62630ca2fbe3bfaa..9e218cde8bca0b1241e8768231f40505279afd5e 100644
+--- a/lib/node-loader-babel.js
++++ b/lib/node-loader-babel.js
+@@ -23,7 +23,7 @@ const supportedModuleFormats = ["module", "commonjs"];
+ 
+ export async function load(url, context, defaultLoad) {
+   if (useLoader(url)) {
+-    if (url.endsWith(".ts") || url.endsWith(".tsx")) {
++    if (url.endsWith(".ts") || url.endsWith(".tsx") || url.endsWith('.gjs') || url.endsWith('.gts')) {
+       // defaultLoad throws ERR_UNKNOWN_FILE_EXTENSION unless we tell it a module format
+       // We assume typescript users are using ESM rather than CJS, for simplicity
+       context.format = "module";
