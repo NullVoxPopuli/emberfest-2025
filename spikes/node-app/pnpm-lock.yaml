@@ -69,6 +69,9 @@ importers:
       '@nullvoxpopuli/eslint-configs':
         specifier: ^5.3.4
         version: 5.3.4(3fb18fa481f39dac44eb9beffdde6a7e)
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       '@types/rsvp':
         specifier: ^4.0.9
         version: 4.0.9

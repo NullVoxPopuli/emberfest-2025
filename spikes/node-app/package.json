@@ -45,6 +45,7 @@
     "@node-loader/babel": "^2.1.0",
     "@node-loader/import-maps": "^1.1.0",
     "@nullvoxpopuli/eslint-configs": "^5.3.4",
+    "@types/node": "^24.3.0",
     "@types/rsvp": "^4.0.9",
     "babel-plugin-ember-template-compilation": "^2.4.1",
     "concurrently": "^9.1.2",

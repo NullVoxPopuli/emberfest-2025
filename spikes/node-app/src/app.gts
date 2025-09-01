@@ -33,11 +33,4 @@ class App extends Application {
   };
 }
 
-const element = document.createElement('div');
-const parent = document.createElement('div');
-
-parent.append(element);
-
-App.create({
-  element,
-});
+App.create({});
