@@ -1,5 +1,6 @@
 # unconventional js
 /blueprints/*/files/
+src/app.gts
 
 # compiled output
 /dist/
