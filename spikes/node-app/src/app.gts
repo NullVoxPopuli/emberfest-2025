@@ -3,16 +3,7 @@ import './renderer.ts';
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { on } from '@ember/modifier';
-import EmberRouter from '@ember/routing/router';
-
-import Application from 'ember-strict-application-resolver';
-
-class Router extends EmberRouter {
-  location = 'none';
-  rootURL = '/';
-}
-
-Router.map(function () {});
+import { renderComponent } from '@ember/renderer';
 
 class HelloWorld extends Component {
   @tracked count = 0;
@@ -26,11 +17,6 @@ class HelloWorld extends Component {
   </template>
 }
 
-class App extends Application {
-  modules = {
-    './router': Router,
-    './templates/application': HelloWorld,
-  };
-}
-
-App.create({});
+renderComponent(HelloWorld, {
+  into: document.body,
+});

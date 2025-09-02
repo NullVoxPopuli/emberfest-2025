@@ -13,14 +13,10 @@ const window = new Window({
 
 window.document.body.innerHTML = '<div></div>';
 
-Object.assign(globalThis, {
+const { navigator, crypto, ...toApply } = window;
+
+Object.assign(globalThis, toApply, {
   window: window,
-  document: window.document,
-  location: window.location,
-  history: window.history,
-  // navigator exists on node's globalThis already
-  // navigator: window.navigator,
-  // self: dom.window,
 });
 
 console.log('--------------');

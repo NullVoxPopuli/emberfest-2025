@@ -5,14 +5,6 @@ settings:
   excludeLinksFromLockfile: false
   peersSuffixMaxLength: 40
 
-patchedDependencies:
-  '@node-loader/babel':
-    hash: 9bf61ecb23d9565c61f9a052754edf141e78d9034976298b42f841e485a10902
-    path: spikes/node-app/patches/@node-loader__babel.patch
-  ember-source:
-    hash: a02ecc08f00fd6e694c25dc06ac62886361ac884be23fee6dfcd24d8736a37e1
-    path: spikes/node-app/patches/ember-source.patch
-
 importers:
 
   .: {}
