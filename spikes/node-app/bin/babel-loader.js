@@ -94,11 +94,18 @@ const force = [
   '@embroider/router',
   '@glimmer/component',
   'ember-source',
+  'ember-resources',
   'ember-strict-application-resolver',
 ];
 
 function useLoader(url) {
   if (force.some((x) => url.includes(x))) return true;
 
-  return !/node_modules/.test(url) && !/node:/.test(url);
+  const result = !/node_modules/.test(url) && !/node:/.test(url);
+
+  // if (!result) {
+  //   console.log('ignoring', url);
+  // }
+
+  return result;
 }

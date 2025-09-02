@@ -5,6 +5,11 @@ settings:
   excludeLinksFromLockfile: false
   peersSuffixMaxLength: 40
 
+patchedDependencies:
+  ember-resources:
+    hash: dc320b5ea150fa286024fbedad94c54852cf1b811788f60a86de4597c40799a2
+    path: ../spikes/node-app/patches/ember-resources.patch
+
 importers:
 
   .:

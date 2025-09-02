@@ -1,0 +1,12 @@
+diff --git a/package.json b/package.json
+index 5b6c778907f967f5bf84dc5facfd6f2f865849c2..8bd97c3d0a17107dda33656a746e97d9f20a3d96 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,7 @@
+ {
+   "name": "ember-resources",
+   "version": "7.0.7",
++  "type": "module",
+   "keywords": [
+     "ember-addon"
+   ],

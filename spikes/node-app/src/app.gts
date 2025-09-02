@@ -2,18 +2,25 @@ import './renderer.ts';
 
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
-import { on } from '@ember/modifier';
 import { renderComponent } from '@ember/renderer';
+
+// import { Button, Text } from './terminal.ts';
 
 class HelloWorld extends Component {
   @tracked count = 0;
 
   increment = () => (this.count += 1);
 
-  <template>
-    <p>You have clicked the button {{this.count}} times.</p>
+  get message() {
+    return `You have clicked the button ${this.count} times.`;
+  }
 
-    <button type="button" {{on "click" this.increment}}>Click</button>
+  <template>
+    You have clicked the button
+    {{this.count}}
+    times.
+
+    {{! Button "Click" this.increment }}
   </template>
 }
 

@@ -19,10 +19,27 @@ Object.assign(globalThis, toApply, {
   window: window,
 });
 
-console.log('--------------');
-console.log(window.document.body.innerHTML);
-console.log('--------------');
-
 process.on('exit', () => {
   window.close();
 });
+
+import { addText, removeText } from './terminal.ts';
+
+class TextNode extends window.Text {
+  text: string;
+  constructor(text: string) {
+    super(text);
+    this.text = text.replaceAll(/\s\s/g, '').trim();
+
+    addText(this.text);
+  }
+  remove() {
+    super.remove();
+
+    removeText(this.text);
+  }
+}
+
+window.document.createTextNode = (text) => {
+  return new TextNode(text);
+};

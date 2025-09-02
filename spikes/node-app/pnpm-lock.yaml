@@ -5,13 +5,18 @@ settings:
   excludeLinksFromLockfile: false
   peersSuffixMaxLength: 40
 
+patchedDependencies:
+  ember-resources:
+    hash: dc320b5ea150fa286024fbedad94c54852cf1b811788f60a86de4597c40799a2
+    path: patches/ember-resources.patch
+
 importers:
 
   .:
     dependencies:
-      ember-strict-application-resolver:
-        specifier: ^0.1.0
-        version: 0.1.0(@babel/core@7.28.3)
+      console-gui-tools:
+        specifier: ^3.7.0
+        version: 3.7.0
     devDependencies:
       '@babel/core':
         specifier: ^7.27.1
@@ -91,9 +96,6 @@ importers:
       happy-dom:
         specifier: ^18.0.1
         version: 18.0.1
-      jsdom:
-        specifier: ^26.1.0
-        version: 26.1.0
       prettier:
         specifier: ^3.5.3
         version: 3.6.2
@@ -1494,6 +1496,10 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
+  chalk@5.6.0:
+    resolution: {integrity: sha512-46QrSQFyVSEyYAgQ22hQ+zDa60YHA4fBstHmtSApj1Y5vKtG27fWowW03jCk5KcbXEWPZUIR894aARCA/G1kfQ==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+
   clean-up-path@1.0.0:
     resolution: {integrity: sha512-PHGlEF0Z6976qQyN6gM7kKH6EH0RdfZcc8V+QhFe36eRxV0SMH5OUBZG7Bxa9YcreNzyNbK63cGiZxdSZgosRw==}
 
@@ -1535,6 +1541,9 @@ packages:
     resolution: {integrity: sha512-fsfrO0MxV64Znoy8/l1vVIjjHa29SZyyqPgQBwhiDcaW8wJc2W3XWVOGx4M3oJBnv/zdUZIIp1gDeS98GzP8Ng==}
     engines: {node: '>=18'}
     hasBin: true
+
+  console-gui-tools@3.7.0:
+    resolution: {integrity: sha512-81GdIMyNhtMsU/WL2D2g11H14o2aQTuijDAJgwEG55ZE7ryOpu6Gamuc9j4gFKTuwAAGW9nYFJbu59g9kzn5nA==}
 
   content-tag@2.0.3:
     resolution: {integrity: sha512-htLIdtfhhKW2fHlFLnZH7GFzHSdSpHhDLrWVswkNiiPMZ5uXq5JfrGboQKFhNQuAAFF8VNB2EYUj3MsdJrKKpg==}
@@ -1729,9 +1738,6 @@ packages:
     engines: {node: '>= 18.*'}
     peerDependencies:
       '@glimmer/component': '>= 1.1.2'
-
-  ember-strict-application-resolver@0.1.0:
-    resolution: {integrity: sha512-dmVJPLDoltiB5PN4xhUmg9JrUMPJxdeIlwqUtRBvIHpOLrbi069m7AvXGEh0b+Pq7g1HkLwt/lMm6ouHVry7hQ==}
 
   ember-template-lint@7.9.3:
     resolution: {integrity: sha512-iqC4rv/oVlXViGuf7hlOA/bC550ZqacZKAc8WvQV0ueeCtIYPkYYK+Tc7FwpM8qGx3jiwu/ZsTuNfPInI5pL7Q==}
@@ -2446,15 +2452,6 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       canvas: ^2.11.2
-    peerDependenciesMeta:
-      canvas:
-        optional: true
-
-  jsdom@26.1.0:
-    resolution: {integrity: sha512-Cvc9WUhxSMEo4McES3P7oK3QaXldCfNWp7pl2NNeiIFlCoLr3kfq9kb1fxftiwk1FLV7CvpvDfonxtzUDeSOPg==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      canvas: ^3.0.0
     peerDependenciesMeta:
       canvas:
         optional: true
@@ -5403,6 +5400,8 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
+  chalk@5.6.0: {}
+
   clean-up-path@1.0.0: {}
 
   cliui@8.0.1:
@@ -5443,6 +5442,10 @@ snapshots:
       supports-color: 8.1.1
       tree-kill: 1.2.2
       yargs: 17.7.2
+
+  console-gui-tools@3.7.0:
+    dependencies:
+      chalk: 5.6.0
 
   content-tag@2.0.3: {}
 
@@ -5765,14 +5768,6 @@ snapshots:
       simple-html-tokenizer: 0.5.11
     transitivePeerDependencies:
       - rsvp
-      - supports-color
-
-  ember-strict-application-resolver@0.1.0(@babel/core@7.28.3):
-    dependencies:
-      '@embroider/addon-shim': 1.10.0
-      decorator-transforms: 2.3.0(@babel/core@7.28.3)
-    transitivePeerDependencies:
-      - '@babel/core'
       - supports-color
 
   ember-template-lint@7.9.3:
@@ -6673,33 +6668,6 @@ snapshots:
       nwsapi: 2.2.21
       parse5: 7.3.0
       rrweb-cssom: 0.7.1
-      saxes: 6.0.0
-      symbol-tree: 3.2.4
-      tough-cookie: 5.1.2
-      w3c-xmlserializer: 5.0.0
-      webidl-conversions: 7.0.0
-      whatwg-encoding: 3.1.1
-      whatwg-mimetype: 4.0.0
-      whatwg-url: 14.2.0
-      ws: 8.18.3
-      xml-name-validator: 5.0.0
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-
-  jsdom@26.1.0:
-    dependencies:
-      cssstyle: 4.6.0
-      data-urls: 5.0.0
-      decimal.js: 10.6.0
-      html-encoding-sniffer: 4.0.0
-      http-proxy-agent: 7.0.2
-      https-proxy-agent: 7.0.6
-      is-potential-custom-element-name: 1.0.1
-      nwsapi: 2.2.21
-      parse5: 7.3.0
-      rrweb-cssom: 0.8.0
       saxes: 6.0.0
       symbol-tree: 3.2.4
       tough-cookie: 5.1.2
