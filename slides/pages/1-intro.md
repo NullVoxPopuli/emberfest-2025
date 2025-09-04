@@ -264,8 +264,12 @@ title: What's interesting about Auditboard's code? (currently (continued))
 
 # 1 year later: stats! (continued (continued))
 
+<ArrowBL v-click.show="1" v-click.hide="2" :bottom=0 :right=10 />
+<ArrowBL v-click.show="2" :bottom=8 :right=25 />
+<ArrowBL v-click.show="2" :bottom=15 :right=8 />
+<Line v-click.show="2" :bottom=9 :left=2 :width=40 />
 
-auditboard-frontend
+<p style="position: absolute;">auditboard-frontend</p>
 
 |          | Last Year | This Year | Δ       |
 | -------- | --------- | --------- | ------- |
@@ -273,9 +277,11 @@ auditboard-frontend
 | TS       | 0.31m     | 0.47m     | +52%    |
 | GJS      | 1.7k      | 0.52m     | +30,488% |
 | GTS      | 64.6k     | 0.30m     | +364%   |
+| HBS      | 249k      | 0         | -100%   |
 | CSS, etc | 0.52m     | 0.79m     | +52%    |
 | ........ |           |           |         |
 | Total    | 2m        | 2.9m      | +50%    | 
+
 
 <br />
 
@@ -284,10 +290,11 @@ auditboard-frontend
 This repo has all the ember!
 
 Some interesting things about numbers in this table:
-- the total number of lines only went up by 50%
+- [click] the total number of lines only went up by 50%
 - however, adding 1 million lines of code in one year is just... bonkers
-- fun fact: during this time, this codebase completely migrated all 
+- [click] fun fact: during this time, this codebase completely migrated all 
   components, route-templates, and rendering tests to gjs and gts.
+  We have no more handlebars.
 - also! during this time all but one apps in the repo are now running vite
 
 
