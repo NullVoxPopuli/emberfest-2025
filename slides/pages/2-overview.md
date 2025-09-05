@@ -6,12 +6,12 @@ transition: slide-left
 
 <div class="large-code">
 
-```bash {at=1}
+```bash 
 # or npx
 ember new my-app-name
 ```
 
-```bash {at=2}
+```bash 
 # or npx
 pnpm dlx ember-cli@latest \
 	new my-app-name \
@@ -66,7 +66,6 @@ transition: slide-left
   - (or how to render a component)
 - how to patch ember 
 
----
 
 
 ---
@@ -74,7 +73,6 @@ transition: slide-left
 ---
 
 
----
 
 # Booting an application
 
@@ -87,6 +85,9 @@ prior to ember-source 6.8.0-alpha.7
 We don't always need new apis
 -->
 
+---
+transition: slide-left
+---
 
 # Booting an application 
 
@@ -99,6 +100,11 @@ the easy way
 This is a new API, and is much simpler than the technique of making a whole application
 
 -->
+
+---
+transition: slide-left
+---
+
 
 # Patching Ember
 
