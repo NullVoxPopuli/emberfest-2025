@@ -4,9 +4,14 @@ transition: slide-left
 
 # We are familiar with creating whole applications 
 
-ember new blah blah
+<div class="large-code">
 
-```bash
+```bash {at=1}
+# or npx
+ember new my-app-name
+```
+
+```bash {at=2}
 # or npx
 pnpm dlx ember-cli@latest \
 	new my-app-name \
@@ -15,6 +20,14 @@ pnpm dlx ember-cli@latest \
 	--no-welcome \
 	--pnpm
 ```
+
+</div>
+
+<!-- 
+		This is what we're all familiar with.
+[click] Some may refer to this as "ember new", but over time, 
+you perhaps, like me, have [click] developed [click] some [click] preferences
+-->
 
 
 
@@ -42,6 +55,7 @@ transition: slide-left
 so much more.
 
 
+
 ---
 transition: slide-left
 ---
@@ -53,6 +67,38 @@ transition: slide-left
 - how to patch ember 
 
 ---
+
+
+---
+transition: slide-left
+---
+
+
+---
+
+# Booting an application
+
+prior to ember-source 6.8.0-alpha.7
+
+- `new Application()`
+
+
+<!--
+We don't always need new apis
+-->
+
+
+# Booting an application 
+
+the easy way
+
+- `renderComponent`
+
+<!--
+
+This is a new API, and is much simpler than the technique of making a whole application
+
+-->
 
 # Patching Ember
 

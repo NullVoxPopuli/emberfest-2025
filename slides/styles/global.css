@@ -29,6 +29,10 @@
 	border: 1px solid gray;
 }
 
+.large-code .slidev-code {
+		font-size: 1.5rem !important;
+}
+
 .two-columns {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
