@@ -11,7 +11,7 @@ ember new my-app-name
 ```
 </div>
 
-<div class="large-code content-top-left" v-click="1" v-click.hide="+">
+<div class="large-code content-top-left" v-click.show="1" v-click.hide="2">
 
 ```bash 
 npx ember-cli@latest new my-app-name
@@ -19,7 +19,7 @@ npx ember-cli@latest new my-app-name
 
 </div>
 
-<div class="large-code content-top-left" v-click="2" v-click.hide="+1">
+<div class="large-code content-top-left" v-click.show="2" v-click.hide="3">
 
 ```bash 
 pnpm dlx ember-cli@latest \
@@ -27,7 +27,7 @@ pnpm dlx ember-cli@latest \
 ```
 
 </div>
-<div class="large-code content-top-left" v-click="3" v-click.hide="+1">
+<div class="large-code content-top-left" v-click.show="3" v-click.hide="4">
 
 ```bash 
 pnpm dlx ember-cli@latest \
@@ -36,7 +36,7 @@ pnpm dlx ember-cli@latest \
 ```
 
 </div>
-<div class="large-code content-top-left" v-click="4" v-click.hide="+1">
+<div class="large-code content-top-left" v-click.show="4" v-click.hide="5">
 
 ```bash 
 pnpm dlx ember-cli@latest \
@@ -47,7 +47,7 @@ pnpm dlx ember-cli@latest \
 
 </div>
 
-<div class="large-code content-top-left" v-click="5" v-click.hide="+1">
+<div class="large-code content-top-left" v-click.show="5" v-click.hide="6">
 
 ```bash 
 pnpm dlx ember-cli@latest \
@@ -59,7 +59,7 @@ pnpm dlx ember-cli@latest \
 
 </div>
 
-<div class="large-code content-top-left" v-click="6" v-click.hide="+1">
+<div class="large-code content-top-left" v-click.show="6">
 
 ```bash 
 pnpm dlx ember-cli@latest \
