@@ -30,7 +30,7 @@
 }
 
 .large-code .slidev-code {
-		font-size: 1.5rem !important;
+		font-size: 2rem !important;
 }
 
 .two-columns {
@@ -128,3 +128,9 @@ a.qr-link {
 	border-bottom-right-radius: 0;
 }
 
+
+.content-top-left {
+	position: absolute;
+	top: 7rem;
+	left: var(--gutter);
+}

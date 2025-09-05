@@ -4,21 +4,70 @@ transition: slide-left
 
 # We are familiar with creating whole applications 
 
-<div class="large-code">
+<div class="large-code content-top-left" v-click.hide="1">
 
 ```bash 
-# or npx
 ember new my-app-name
 ```
+</div>
+
+<div class="large-code content-top-left" v-click="1" v-click.hide="+">
 
 ```bash 
-# or npx
+npx ember-cli@latest new my-app-name
+```
+
+</div>
+
+<div class="large-code content-top-left" v-click="2" v-click.hide="+1">
+
+```bash 
 pnpm dlx ember-cli@latest \
-	new my-app-name \
+  new my-app-name
+```
+
+</div>
+<div class="large-code content-top-left" v-click="3" v-click.hide="+1">
+
+```bash 
+pnpm dlx ember-cli@latest \
+  new my-app-name \
+	--blueprint @ember/app-blueprint
+```
+
+</div>
+<div class="large-code content-top-left" v-click="4" v-click.hide="+1">
+
+```bash 
+pnpm dlx ember-cli@latest \
+  new my-app-name \
+	--blueprint @ember/app-blueprint \
+	--typescript
+```
+
+</div>
+
+<div class="large-code content-top-left" v-click="5" v-click.hide="+1">
+
+```bash 
+pnpm dlx ember-cli@latest \
+  new my-app-name \
+	--blueprint @ember/app-blueprint \
+	--typescript \
+	--no-welcome
+```
+
+</div>
+
+<div class="large-code content-top-left" v-click="6" v-click.hide="+1">
+
+```bash 
+pnpm dlx ember-cli@latest \
+  new my-app-name \
 	--blueprint @ember/app-blueprint \
 	--typescript \
 	--no-welcome \
-	--pnpm
+  --pnpm
 ```
 
 </div>
@@ -65,7 +114,7 @@ transition: slide-left
 - how to boot an application
   - (or how to render a component)
 - how to patch ember 
-
+- how to debug ✨ properly ✨
 
 
 ---
