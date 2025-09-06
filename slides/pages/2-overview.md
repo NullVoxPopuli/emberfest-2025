@@ -59,7 +59,7 @@ pnpm dlx ember-cli@latest \
 
 </div>
 
-<div class="large-code content-top-left" v-click.show="6">
+<div class="large-code content-top-left" v-click.show="6" v-click.hide="7">
 
 ```bash 
 pnpm dlx ember-cli@latest \
@@ -72,10 +72,24 @@ pnpm dlx ember-cli@latest \
 
 </div>
 
+<div class="large-code content-top-left" v-click.show="7">
+
+```bash 
+pnpm dlx ember-cli@latest \
+  new my-app-name \
+	--blueprint @ember/app-blueprint \
+	--typescript \
+	--no-welcome \
+  --pnpm \
+  --ci-provider=none
+```
+
+</div>
+
 <!-- 
 		This is what we're all familiar with.
-[click] Some may refer to this as "ember new", but over time, 
-you perhaps, like me, have [click] developed [click] some [click] preferences
+[click] Some may refer to this as "ember new", but over time, [click] 
+you perhaps, [click] like me, [click] have [click] developed [click] some [click] preferences.
 -->
 
 
@@ -87,9 +101,17 @@ transition: slide-left
 # We've seen that ember can host other frameworks
 
 
+<div class="row">
+	<img style="width: 50%" src="/images/nick-discord.webp" v-click.hide="1">
+	<img style="width: 50%" src="/images/arne-bertrand-discord.webp" v-click="1">
+</div>
+
 <!--
 
-Yesterday Nick demonstrated how we can make other frameworks in Ember.
+Yesterday we saw how we can make other frameworks work in Ember.
+
+[click] later today we'll see see how the `ember()` vite plugin enables integration in the oppsite
+direction.
 
 
 -->
@@ -97,11 +119,24 @@ Yesterday Nick demonstrated how we can make other frameworks in Ember.
 
 ---
 transition: slide-left
+layout: center
 ---
 
 # What more can we do?
 
+
+<h2 v-click>
 so much more.
+</h2>
+
+<!--
+
+So, what more can we do?
+
+[click] _so much more_.
+
+
+-->
 
 
 
@@ -115,6 +150,10 @@ transition: slide-left
   - (or how to render a component)
 - how to patch ember 
 - how to debug ✨ properly ✨
+
+<!-- 
+There are two things you need to know.
+-->
 
 
 ---

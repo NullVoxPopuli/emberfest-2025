@@ -134,3 +134,9 @@ a.qr-link {
 	top: 7rem;
 	left: var(--gutter);
 }
+
+.row {
+	display: flex;
+	gap: 1rem;
+	align-items: start;
+}
