@@ -113,7 +113,7 @@ title: Who am I?
 
 <a class="qr-link top-right" href="https://nullvoxpopuli.com">
 	<QRCode
-		class="qr-code"
+		class="qr-code"let
 		type="svg"
 		data="https://nullvoxpopuli.com"
 	/>
