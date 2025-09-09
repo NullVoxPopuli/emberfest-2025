@@ -29,6 +29,10 @@
 	border: 1px solid gray;
 }
 
+.medium-code .slidev-code {
+		font-size: 1.5rem !important;
+}
+
 .large-code .slidev-code {
 		font-size: 2rem !important;
 }
