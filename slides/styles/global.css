@@ -81,6 +81,20 @@ a.qr-link {
 	transform: scale(0.75);
 	transform-origin: top right;
 	text-align: center;
+	&.inline {
+		position: unset;
+		display: grid;
+		gap: 0.5rem;
+		justify-items: start;
+		transform: none;
+
+		.qr-code {
+			padding: 0.25rem;
+		}
+		.text-black {
+			font-size: 1.5rem;
+		}
+	}
 	.qr-code {
 		border-radius: 0.5rem;
 		padding: 1rem;

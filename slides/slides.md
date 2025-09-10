@@ -32,3 +32,8 @@ src: ./pages/2.4-so-what.md
 src: ./pages/3-upcoming-things.md
 transition: none
 ---
+
+---
+src: ./pages/4-end.md
+transition: none
+---
