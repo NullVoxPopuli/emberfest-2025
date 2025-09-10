@@ -168,4 +168,46 @@ a.qr-link {
 			opacity: 0.1;
 		}
 	}
+
+	&.no-border {
+		img {
+			padding: 0px;
+		}
+	}
+
+	&.auto {
+		img + img {
+			position: absolute;
+			top: 3.5rem;
+			left: 4.5rem;
+		}
+		img + img + img {
+			top: 4rem;
+			left: 5rem;
+		}
+		img + img + img + img{
+			top: 4.5rem;
+			left: 5.5rem;
+		}
+		img + img + img + img + img {
+			top: 5rem;
+			left: 6rem;
+		}
+		img + img + img + img + img + img {
+			top: 5.5rem;
+			left: 6.5rem;
+		}
+		img + img + img + img + img + img + img {
+			top: 6rem;
+			left: 7rem;
+		}
+		img + img + img + img + img + img + img + img {
+			top: 6.5rem;
+			left: 7.5rem;
+		}
+		img + img + img + img + img + img + img + img + img {
+			top: 7rem;
+			left: 8rem;
+		}
+	}
 }
