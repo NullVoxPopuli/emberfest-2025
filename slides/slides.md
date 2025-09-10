@@ -16,6 +16,10 @@ src: ./pages/2.2-patch.md
 ---
 
 ---
+src: ./pages/2.3-render.md
+---
+
+---
 src: ./pages/2.3-boot.md
 ---
 
