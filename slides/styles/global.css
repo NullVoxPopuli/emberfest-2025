@@ -35,6 +35,17 @@
 
 .large-code .slidev-code {
 		font-size: 2rem !important;
+		line-height: 2.5rem !important;
+}
+
+.large-code.full-width {
+	width: 100vw;
+	margin-left:-3.5rem;
+	margin-right:-3.5rem;
+	.slidev-code-wrapper {
+		border-left: none;
+		border-right: none;
+	}
 }
 
 .two-columns {
