@@ -3,7 +3,7 @@
 
 	const props = defineProps(['href', 'label', 'inline', 'size'])
 
-	const inline = Boolean('inline' in props);
+	const inline = Boolean(props.inline);
 
 
 	let size = props.size ?? 300;
