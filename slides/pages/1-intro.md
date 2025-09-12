@@ -68,9 +68,17 @@ transition: slide-up
 <!--
 
 Use ember wherever you feel like
-	Things you need to know
+
+everywhere.
+
+Over the next short while, we'll go over everything you need to know
+
+||||||||||| previous subtitles
+
 		How does an app boot?
+
 		How do you manage the owner?
+
 		Do you need to manage the owner?
 
 

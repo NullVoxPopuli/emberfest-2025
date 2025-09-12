@@ -5,6 +5,12 @@ transition: none
 
 # What's coming up next? 
 
+<!-- 
+
+What's coming up next?
+
+-->
+
 ---
 title: Upcoming Stuff
 transition: none
