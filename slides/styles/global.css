@@ -29,6 +29,15 @@
 	border: 1px solid gray;
 }
 
+.effects-patch-code .slidev-code {
+	font-size: 0.5rem !important;
+	line-height: 0.4rem !important;
+}
+.effects-patch-code .slidev-code-wrapper {
+	position: absolute;
+	top: -4rem;
+}
+
 .medium-code .slidev-code {
 		font-size: 1.5rem !important;
 }
@@ -235,4 +244,11 @@ a.qr-link {
 			left: 8rem;
 		}
 	}
+}
+
+
+.box {
+	border: 3px solid red;
+	position: absolute;
+	pointer-events: none;
 }
