@@ -1,5 +1,10 @@
 {
   "name": "root",
   "private": true,
-  "packageManager": "pnpm@10.15.0"
+  "packageManager": "pnpm@10.16.1",
+  "scripts": {
+    "slides": "cd slides && pnpm dev",
+    "demo:node": "cd spikes/node-app && ./bin/start.sh",
+    "demo:effects": "cd spikes/effects-app && pnpm start"
+  }
 }

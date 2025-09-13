@@ -14,8 +14,9 @@ for (let prop in props) {
 <template>
 	<span
 		style="
-			border-bottom: 3px solid #bb0055;
+			border-bottom: 3px solid #ee0055;
 			position: absolute;
+			z-index: 10;
 			"
 		:style="stylesObject"></span>
 
