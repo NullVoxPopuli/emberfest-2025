@@ -4,14 +4,14 @@ transition: slide-left
 
 # We are familiar with creating whole applications 
 
-<div class="large-code content-top-left" v-click.hide="1">
+<div class="large-code content-top-left" v-click hide>
 
 ```bash 
 ember new my-app-name
 ```
 </div>
 
-<div class="large-code content-top-left" v-click.show="1" v-click.hide="2">
+<div class="large-code content-top-left" v-click hide>
 
 ```bash 
 npx ember-cli@latest new my-app-name
@@ -19,7 +19,7 @@ npx ember-cli@latest new my-app-name
 
 </div>
 
-<div class="large-code content-top-left" v-click.show="2" v-click.hide="3">
+<div class="large-code content-top-left" v-click hide>
 
 ```bash 
 pnpm dlx ember-cli@latest \
@@ -27,7 +27,7 @@ pnpm dlx ember-cli@latest \
 ```
 
 </div>
-<div class="large-code content-top-left" v-click.show="3" v-click.hide="4">
+<div class="large-code content-top-left" v-click hide>
 
 ```bash 
 pnpm dlx ember-cli@latest \
@@ -36,7 +36,7 @@ pnpm dlx ember-cli@latest \
 ```
 
 </div>
-<div class="large-code content-top-left" v-click.show="4" v-click.hide="5">
+<div class="large-code content-top-left" v-click hide>
 
 ```bash 
 pnpm dlx ember-cli@latest \
@@ -47,7 +47,7 @@ pnpm dlx ember-cli@latest \
 
 </div>
 
-<div class="large-code content-top-left" v-click.show="5" v-click.hide="6">
+<div class="large-code content-top-left" v-click hide>
 
 ```bash 
 pnpm dlx ember-cli@latest \
@@ -59,7 +59,7 @@ pnpm dlx ember-cli@latest \
 
 </div>
 
-<div class="large-code content-top-left" v-click.show="6" v-click.hide="7">
+<div class="large-code content-top-left" v-click hide>
 
 ```bash 
 pnpm dlx ember-cli@latest \
@@ -72,7 +72,7 @@ pnpm dlx ember-cli@latest \
 
 </div>
 
-<div class="large-code content-top-left" v-click.show="7">
+<div class="large-code content-top-left" v-click>
 
 ```bash 
 pnpm dlx ember-cli@latest \
@@ -170,7 +170,8 @@ transition: slide-left
 <!-- 
 There are two things you need to know. (and not necisarily in this order)
 
-[click] how to beet an application, what even is an application, or a component?
+[click] how to boot an application
+
   this is just gonna be a super quick overview, since (I think) we're going in depth on this later today
 
 [click] how to patch ember 
