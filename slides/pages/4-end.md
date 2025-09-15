@@ -9,7 +9,7 @@ title: Action Items
   - dive deep in to `node_modules`
 
 - for me
-  - spike out new renderer
+  - spike out new renderer (learn how these _really_ work)
   - spike out flexible (low-level) core reactivity integration
   - RFC: try/catch
   - RFC: "Starbeam"

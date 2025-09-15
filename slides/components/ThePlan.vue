@@ -49,7 +49,8 @@ const linesEl = useTemplateRef('linescontainer');
 				lines.push(line);
 			}
 			for (let [key, ref] of Object.entries(outputs)) {
-				let line = new LinkerLine({ parent, start: ember.value, end: ref.value, hidden: true });
+				let line = new LinkerLine({ parent, start: ember.value, end: ref.value, hidden: true, path:
+				'straight'});
 				lines.push(line);
 			}
 			globalThis.lines = lines;
@@ -134,6 +135,7 @@ const linesEl = useTemplateRef('linescontainer');
 		text-align: center;
 		justify-content: center;
 		display: flex;
+		margin-top: -6rem;
 		a {
 			border-bottom: none;
 		}
@@ -142,7 +144,7 @@ const linesEl = useTemplateRef('linescontainer');
 	.the-plan-outputs {
 		grid-area: bottom;
 		align-self: center;
-		justify-self: end;
+		justify-self: center;
 	}
 
 	.plans-container {
@@ -155,6 +157,8 @@ const linesEl = useTemplateRef('linescontainer');
 			"left noL center noR right"
 			"left noL  noB   noR right"
 			"left bottom  bottom  bottom right"
+	}
+	.unreal-askew {
 	}
 
 </style>
@@ -233,9 +237,9 @@ const linesEl = useTemplateRef('linescontainer');
 				<img src="/images/android.png" />
 				<span>Android</span>
 			</div>
-			<div ref="unreal">
+			<div ref="unreal" class="unreal-askew">
 				<img src="/images/unreal-engine.png" />
-				<span>Unreal Engine</span>
+				<span>Unreal<br>Engine</span>
 			</div>
 		</diV>
 	</div>

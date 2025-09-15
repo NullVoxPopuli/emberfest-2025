@@ -303,7 +303,8 @@ Some interesting things about numbers in this table:
 - [click] fun fact: during this time, this codebase completely migrated all 
   components, route-templates, and rendering tests to gjs and gts.
   We have no more handlebars.
-- also! during this time all but one apps in the repo are now running vite
+- also! during this time all but one apps in the repo are now running vite -- and that last app has
+a PR that went green just before I left for Belgium. 
 
 
 Best of all....
