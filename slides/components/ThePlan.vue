@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	import { useTemplateRef, onMounted, onUnmounted } from 'vue'
+	import { useTemplateRef, onMounted, onUnmounted, watch } from 'vue'
 	import LinkerLine from 'linkerline';
 import { onSlideEnter
 , onSlideLeave
@@ -41,57 +41,64 @@ const linesEl = useTemplateRef('linescontainer');
 	function createLines() {
 		let parent = null; //linesEl.value;
 			for (let [key, ref] of Object.entries(leftInputs)) {
-				let line = new LinkerLine({ parent, start: ref.value, end: ember.value, show: 'draw' });
+				let line = new LinkerLine({ parent, start: ref.value, end: ember.value, hidden: true });
 				lines.push(line);
 			}
 			for (let [key, ref] of Object.entries(rightInputs)) {
-				let line = new LinkerLine({  parent, start: ref.value, end: ember.value, show: 'draw' });
+				let line = new LinkerLine({  parent, start: ref.value, end: ember.value, hidden: true });
 				lines.push(line);
 			}
 			for (let [key, ref] of Object.entries(outputs)) {
-				let line = new LinkerLine({ parent, start: ember.value, end: ref.value, show: 'draw' });
+				let line = new LinkerLine({ parent, start: ember.value, end: ref.value, hidden: true });
 				lines.push(line);
 			}
 			globalThis.lines = lines;
 			globalThis.LinkerLine = LinkerLine;
 	}
 	const isActive = useIsSlideActive();
-	let isMounted = false;
 
-	onMounted(() => {
-		isMounted = true;
-		if (isActive.value) {
-				if (lines.length === 0) {
+	function show() {
+			console.log('show');
+			if (lines.length === 0) {
 						createLines();
-				}
-		}
-	});
-
-	onSlideEnter(() => {
-		console.log('enter', { lines, isActive: isActive.value });
-		if (isActive.value) {
-			if (isMounted) {
-				if (lines.length === 0) {
-					createLines();
-				}
-
-				console.log('positioning');
-				setTimeout(() => {
-					lines.forEach(x => x.show('draw'));
-					LinkerLine.positionAll();
-				}, 50)
 			}
-		}
-	});
+			requestAnimationFrame(() => {
+				console.log('draw');
+				lines.forEach(x => x.show('draw'));
+			})
+	}
 
-
-	onSlideLeave(() => {
-		console.log('leave', { lines, isActive: isActive.value });
-		if (!isActive.value) {
-			setTimeout(() => {
+	function hide() {
+				console.log('hide');
 				lines.forEach(x => x.hide('none'));
-			}, 150)
-		}
+	}
+
+	let timer;
+	function debounce(fn) {
+			clearTimeout(timer);
+			timer = setTimeout(() => {
+				fn();
+			}, 100)
+
+
+	}
+
+	function update() {
+		let active = isActive.value;
+
+		console.log('update', { active });
+			if (active) {
+				show();
+				return;
+			}
+
+			hide();
+	}
+
+	watch(isActive, (newValue, oldValue) => {
+			console.log({ newValue, oldValue });
+
+			debounce(update);
 	});
 </script>
 
