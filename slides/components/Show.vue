@@ -27,7 +27,7 @@ const show = () => {
 </script>
 
 <template>
-  <div v-if="show()">
+  <div v-if="show()" style="position: absolute; inset: 0; pointer-events: none;">
     <slot/>
   </div>
 </template>
