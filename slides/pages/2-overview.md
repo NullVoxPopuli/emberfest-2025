@@ -175,6 +175,7 @@ There are two things you need to know. (and not necisarily in this order)
   this is just gonna be a super quick overview, since (I think) we're going in depth on this later today
 
 [click] how to patch ember 
+
 perhaps ember doesn't do what you want it to do, and you're very motivated to change its behavior --
 for experimentation or proof of concept purposes, of course.
 
