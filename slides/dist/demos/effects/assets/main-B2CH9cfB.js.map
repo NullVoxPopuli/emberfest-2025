@@ -1,0 +1,1 @@
+{"version":3,"file":"main-B2CH9cfB.js","sources":["../../index.html?html-proxy&index=0.js"],"sourcesContent":["\n      import Application from './app/app';\n      import environment from './app/config/environment';\n\n      Application.create(environment.APP);\n    "],"names":["Application","environment"],"mappings":";;AAIMA,GAAW,CAAC,MAAM,CAACC,GAAW,CAAC,GAAG,CAAC"}

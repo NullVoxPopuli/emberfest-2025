@@ -1,0 +1,1 @@
+import{f as r,o as n,k as i}from"./modules/vue-BTPtaZYJ.js";import{I as p}from"./index-rrfv9S9i.js";const m={__name:"line",props:["bottom","right","left","top","width"],setup(s){p();const t=s,o={};for(let e in t)t[e]!==void 0&&(o[e]=t[e]+"rem");return(e,l)=>(n(),r("span",{style:i([{"border-bottom":"3px solid #ee0055",position:"absolute","z-index":"10"},o])}))}};export{m as _};
