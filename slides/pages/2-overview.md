@@ -187,10 +187,10 @@ mile high deep dive into where are today.
 These are kind of somewhat unrelated topics, but it'll all become important momentarily. I bring
 them up, because some of this stuff feels more complicated than it is, and for me especially I have
 to fight talking myself out of even just... trying -- mustering up that activation energy to get
-started, and realize I can do this. 
+started, and realize I *can* do whatever my task is. 
 
 My hope after going through all this is that you all feel
-empowered.
+empowered to do the same.
 
 -->
 

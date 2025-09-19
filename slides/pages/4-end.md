@@ -19,9 +19,10 @@ title: Action Items
 So here are some action items for both you and for me.
 
 It took me 3 years to put up the Resources RFC, and like.. it wasn't bad, it just mostly me
-struggling with my own activation energy.
+struggling with my own activation energy. It took me a long time to convince myself to spend the
+time. And now that I've done it, I do wish I would have done it sooner..
 
-But, hopefully before 3 years shows up again, I can make better progress (with help from all of your
+But, hopefully before 3 years shows up again, I can make better progress (with help from all of you,
 of course)
 
 -->

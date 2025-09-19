@@ -132,7 +132,9 @@ title: Who am I?
 
 <!--
 
-This is how you can find me online.
+I go by Preston in real life, but 
+
+this is how you can find me online.
 I'm Null Vox Populi everywhere.
 
 The website at the QR code has a list of links, blukesy, mastadon, twitter, github, etc.
@@ -140,6 +142,64 @@ The website at the QR code has a list of links, blukesy, mastadon, twitter, gith
 If you can't find me somewhere, let me know,
 And then you'll have found me.
 -->
+
+---
+transition: slide-up 
+level: 2
+---
+
+<img src="/images/hades2.jpeg" 
+	style="position: absolute; top: 2rem; left: 2rem;"/>
+<img src="/images/starcraft.jpeg" 
+	style="position: absolute; top: 15rem; left: 2rem;" />
+<img src="/images/spitfiction.jpg" 
+	style="width: 200px; position: absolute; top: 2rem; right: 20rem;" />
+<img src="/images/eldenring.jpg" 
+	style="width: 200px; position: absolute; bottom: 0rem; right: 15rem; z-index: 2" />
+<img src="/images/expedition33.png" 
+	style="position: absolute; top: 2rem; right: 2rem; " />
+
+<!-- 
+I play video games
+
+
+-->
+
+---
+transition: slide-up 
+level: 2
+---
+
+<img src="/images/kpdh-poster.jpeg" 
+style="pposition: absolute; top: 2rem; left: 2rem;"
+				/>
+<img src="/images/hands-up.jpeg"
+style="position: absolute; top: 2rem; right: 2rem; z-index: 2"
+/>
+
+<img src="/images/lastfm-stats.png"
+style="position: absolute; top: 6rem; right: 15rem; width: 450px;"
+/>
+
+<!-- 
+I first got in to kpop back in 2012, but it kinda faded for a while.
+
+KPop Demon Hunters has renewed by interest in kpop, and that's exciting, because it's such a good
+movie.
+If you haven't seen it yet (somehow) please go see it.
+-->
+
+---
+transition: slide-up 
+level: 2
+---
+
+<img src="/images/favorite-person.jpg" 
+style="position: absolute; top: -10rem;"/>
+
+<!-- This is my favorite person. 
+I would not be here without her, nor chronically online without her
+understanding and grace -->
 
 ---
 transition: slide-up 
@@ -221,7 +281,7 @@ One year later, things have changed _significantly_.
 This little footnote here at the bottom is just how I calculated the numbers. it's not important
 right now, but if folks like to know that kind of thing, the information is there.
 
-This will be true for the other comparisons as well.
+This will be true for the upcoming comparisons as well.
 
 
 But yea, while this is the smallest of the 3 repos, 

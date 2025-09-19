@@ -125,7 +125,7 @@ but also compete on render performance with our peer frameworks,
 
 In particular, for my own side projects, I make a lot of dinky CLI apps, 
 
-and would like to use ember in a CLI environment -- beyond the demo I showed just a little bit ago -- but serious CLI apps. 
+and would like to use ember in a CLI environment -- beyond the demo I showed just a little bit ago -- but serious (or seriously dinky) CLI apps. 
 
 I also have had a bit of a itch to explore 3D or gaming environments, as web interfaces are, to be
 reductive, just rectangles.
